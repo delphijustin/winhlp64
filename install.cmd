@@ -1,7 +1,7 @@
 @echo off
 if not "%1"=="" goto %1
 if exist %SystemDrive%\winhlp64\winhlp32.exe goto askuninstall
-if exist %appdata%\winhlp64\winhlp32.exe goto askuninstall
+if exist "%appdata%\winhlp64\winhlp32.exe" goto askuninstall
 :menu
 echo Install Windows Help Mod for just you or everyone?
 echo If you install it just for you it will only work on your windows user account
